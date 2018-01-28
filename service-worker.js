@@ -1,6 +1,5 @@
-// 2017-11-02 16:19
 const config = {
-	version: 'shgysk8zer0@github.io',
+	version: 'kern-lodge',
 	caches: [
 		// Main assets
 		'/',
@@ -15,6 +14,9 @@ const config = {
 		'/img/adwaita-icons/actions/view-pin.svg',
 		'/img/adwaita-icons/places/folder-publicshare.svg',
 		'/img/octicons/lib/svg/comment-discussion.svg',
+
+		// Images
+		'/img/board.jpg',
 
 		// Logos
 		'/img/logos/super-user.svg',
