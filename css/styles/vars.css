@@ -13,16 +13,16 @@
 	--nav-background: url("../../img/board.jpg");
 
 	--default-color: #010101;
-	--accent-color: #298F29;
+	--accent-color: #64B397;
 	--alt-color: #FAFAFA;
 	--primary-color: #E0E0E0;
 	--link-color: auto;
-	--button-background: var(--accent-color);
-	--button-active-background: var(--accent-color);
+	--button-background: #71A16F;
+	--button-active-background: #4B6B4A;
 	--button-active-color: var(--button-color);
 	--button-disabled-background: var(--button-active-background);
-	--button-border: 0.1rem outset var(--border-color);
-	--button-disabled-border: 0.1rem inset var(--border-color);
+	--button-border: none;
+	--button-disabled-border: none;
 	--button-active-border: var(--button-disabled-border);
 	--button-color: var(--alt-color);
 

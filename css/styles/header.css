@@ -13,6 +13,10 @@ body > header {
 	justify-content: center;
 }
 
+.contact-link {
+	margin: 1em;
+}
+
 body.layout-home > header {
 	height: calc(100vh - var(--nav-height));
 }
