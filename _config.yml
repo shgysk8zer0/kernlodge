@@ -155,6 +155,8 @@ plugins:
   # - jemoji
   # - jekyll-octicons
 exclude:
+- "/package.json"
+- "/package-lock.json"
 - "*.rb"
 - "*.gemspec"
 - "*.php"
