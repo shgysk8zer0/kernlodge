@@ -15,15 +15,18 @@
 			<span class="mobile-hidden">Comments</span>
 		</a>
 	{% endif %}
-
 	{% if page.layout != 'full-width' %}
-	<a href="{{ '#pinned-posts' | prepend: page.url | absolute_url }}" title="Pinned Posts" class="color-inherit">
-		{% include icon.html icon='#pin' %}
-		<span class="mobile-hidden">Pinned Posts</span>
-	</a>
-	<a href="{{ '#recent-posts' | prepend: page.url | absolute_url }}" title="Recent Posts" class="color-inherit">
-		{% include icon.html icon='#recent' %}
-		<span class="mobile-hidden">Recent Posts</span>
-	</a>
+		<a href="{{ '#pinned-posts' | prepend: page.url | absolute_url }}" title="Pinned Posts" class="color-inherit">
+			{% include icon.html icon='#pin' %}
+			<span class="mobile-hidden">Pinned Posts</span>
+		</a>
+		<a href="{{ '#recent-posts' | prepend: page.url | absolute_url }}" title="Recent Posts" class="color-inherit">
+			{% include icon.html icon='#recent' %}
+			<span class="mobile-hidden">Recent Posts</span>
+		</a>
 	{% endif %}
+	<a href="{{ page.url | append: '#contact-dialog' | absolute_url }}">
+		{% include icon.html icon='#organization' %}
+		<span class="mobile-hidden">Contact</span>
+	</a>
 </nav>

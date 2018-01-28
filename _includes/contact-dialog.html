@@ -1,0 +1,23 @@
+<dialog id="contact-dialog">
+	<header class="clearfix sticky top background-primary shadow">
+		<button type="button" class="float-right" data-close="#contact-dialog">{% include icon.html icon='#close' %}</button>
+	</header>
+	<h1>
+		<a href="{{ site.data.business.url }}">{{ site.data.business.name }}</a>
+	</h1>
+	<img src="{{ site.data.business.image.url }}" alt="{{ site.data.business.image.name }}" />
+	<hr />
+	<a href="tel:{{ site.data.business.telephone }}">{% include icon.html icon='#call-start' %} {{ site.data.business.telephone | replace: '+', ''}}</a>
+	<hr />
+	<a href="mailto:{{ site.data.business.email }}">{% include icon.html icon='#mail-unread' %} {{ site.data.business.email }}</a>
+	<hr />
+	<address>
+		{% include icon.html icon='#location' %}
+		{{ site.data.business.address.streetAddress }}</br />
+		{{ site.data.business.address.addressRegion }},
+		{{ site.data.business.address.addressLocality }}
+	</address>
+	<hr />
+	<a href="{{ site.data.business.url }}">{% include icon.html icon='#link' %}{{ site.data.business.url }}</a>
+	<script type="application/ld+json">{{ site.data.business | jsonify }}</script>
+</header>
