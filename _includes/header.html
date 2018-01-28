@@ -11,10 +11,12 @@
 	</div>
 	<h3 class="center branding animation-slow animation-ease-in bounceIn animation-fill-backwards">
 		<a href="{{ site.data.business.url }}" class="business-name underline>{{ site.data.business.name }}">
-		{% include icon.html
-			icon='#logo'
-			class='current-color logo icon'
-		%}
+			<span class="business-name">{{ site.data.business.name }}</span>
+			{% include icon.html
+				icon='#logo'
+				class='current-color logo icon'
+			%}
+		</a>
 	</h3>
 	<a href="{{ site.data.business.address.url }}" class="inline-block">
 		<address class="center branding animation-slow animation-ease-in bounceIn animation-fill-backwards">

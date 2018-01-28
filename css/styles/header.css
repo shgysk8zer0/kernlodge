@@ -5,7 +5,7 @@ header {
 body > header {
 	grid-area: header;
 	font-size: 1.3rem;
-	text-shadow: 0.4em 0.4em 0.4em rgba(0,0,0,0.7);
+	text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.7);
 	min-height: 40vh;
 	background-position: bottom left;
 	display: flex;
