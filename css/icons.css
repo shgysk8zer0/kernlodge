@@ -1,4 +1,12 @@
-.icon-twirl:hover {
+.social-icons {
+	font-size: 2rem;
+}
+
+.social-icons .icon {
+	transition: transform 800ms cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.social-icons .icon:hover {
 	transform: rotate(360deg) scale(1.7);
 }
 

@@ -6,6 +6,7 @@ body > header {
 	grid-area: header;
 	background-position: bottom right;
 	text-shadow: 0.4em 0.4em 0.4em black;
+	min-height: 30vh;
 }
 
 body.layout-home > header {

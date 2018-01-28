@@ -1,6 +1,3 @@
-@import url("./portfolio.css");
-@import url("./article.css");
-
 main {
 	padding: 1rem;
 	grid-area: main;

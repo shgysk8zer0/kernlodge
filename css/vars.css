@@ -23,7 +23,7 @@
 	--button-border: 0.1rem outset var(--border-color);
 	--button-disabled-border: 0.1rem inset var(--border-color);
 	--button-active-border: var(--button-disabled-border);
-	--button-color: var(--accent-color);
+	--button-color: var(--alt-color);
 
 	--main-font: 'Roboto';
 	--title-font: 'Acme';

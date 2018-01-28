@@ -18,7 +18,7 @@
 @import url("./recent-posts.css");
 @import url("./footer.css");
 @import url("./dialog.css");
-@import url("./contact.css");
+@import url("./article.css");
 
 hr {
 	max-width: calc(100vw - 100px);
