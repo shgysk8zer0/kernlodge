@@ -18,7 +18,6 @@ body > header {
 	padding: 0.3em;
 	border-radius: 6px;
 }
-}
 
 body.layout-home > header {
 	height: calc(100vh - var(--nav-height));
