@@ -4,9 +4,9 @@ header {
 
 body > header {
 	grid-area: header;
-	background-position: bottom right;
 	text-shadow: 0.4em 0.4em 0.4em black;
 	min-height: 30vh;
+	background-position: top left;
 }
 
 body.layout-home > header {
