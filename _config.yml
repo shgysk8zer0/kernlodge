@@ -31,7 +31,9 @@ repository:
   username: shgysk8zer0
   title: shgysk8zer0.github.io
   url: 'https://github.com/shgysk8zer0/shgysk8zer0.github.io'
-twitter: SudoDevTeam
+facebook: 'thekernlodge'
+twitter: 'thekernlodge'
+yelp: 'kern-lodge-kernville'
 feed:
   url: /feed.rss
   type: application/rss+xml

@@ -1,0 +1,20 @@
+<div class="gallery card">
+	<figure>
+		{% assign current = include.images | first %}
+		{% include imgur.html
+			imgur=current
+			sizes=include.sizes
+			class='current'
+		%}
+		<figcaption></figcaption>
+	</figure>
+	<div class="thumbnails">
+		{% for image in include.images %}
+			{% include imgur.html
+				imgur=image
+				sizes='(min-width: 1000px) 10vw, 30vw'
+				class='thumbnail card'
+			%}
+		{% endfor %}
+	</div>
+</div>

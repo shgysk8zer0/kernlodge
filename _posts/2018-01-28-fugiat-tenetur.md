@@ -2,7 +2,6 @@
 title: Nulla ipsam labore
 imgur: lBNNoxM
 description:  In fugiat tenetur inventore blanditiis est eveniet vitae aut.
-pinned: true
 ---
 
 {% include imgur.html imgur='SJU5a6R' sizes='(max-width: 700px) 100vw, 30vw' class='float-right card shadow' %}

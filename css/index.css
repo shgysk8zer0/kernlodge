@@ -24,6 +24,28 @@
 	overflow-x: hidden;
 }
 
+.thumbnails {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+.gallery .thumbnail {
+	cursor: pointer;
+	transition: transform 400ms ease-in-out, box-shadow 400ms ease;
+}
+
+.current-thumb {
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+.gallery .thumbnail:hover {
+	transform: scale(1.2);
+	box-shadow: .1em .1em .1em rgba(0,0,0,0.7);
+}
+
 hr {
 	max-width: calc(100vw - 100px);
 	width: 100%;

@@ -4,6 +4,7 @@ import {$, ready, registerServiceWorker} from './std-js/functions.js';
 import * as Mutations from './std-js/mutations.js';
 import {supportsAsClasses} from './std-js/supports.js';
 import webShareApi from './std-js/webShareApi.js';
+import './gallery.js';
 import {
 	facebook,
 	twitter,

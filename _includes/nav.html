@@ -15,6 +15,16 @@
 			<span class="mobile-hidden">Comments</span>
 		</a>
 	{% endif %}
+	{% if page.url == '/' %}
+		<a href="{{ '/posts/galleries/' | absolute_url }}" title="Photo Galleries" class="color-inherit">
+			{% include icon.html icon='#photos' %}
+			<span class="mobile-hidden">Galleries</span>
+		</a>
+		<a href="{{ '/posts/videos/' | absolute_url }}" title="Videos" class="color-inherit">
+			{% include icon.html icon='#videos' %}
+			<span class="mobile-hidden">Videos</span>
+		</a>
+	{% endif %}
 	{% if page.layout != 'full-width' %}
 		<a href="{{ '#pinned-posts' | prepend: page.url | absolute_url }}" title="Pinned Posts" class="color-inherit">
 			{% include icon.html icon='#pin' %}

@@ -42,3 +42,5 @@ print,img/adwaita-icons/actions/document-print.svg
 pause,img/adwaita-icons/actions/media-playback-pause.svg
 play,img/adwaita-icons/actions/media-playback-start.svg
 stop,img/adwaita-icons/actions/media-playback-stop.svg
+photos,img/adwaita-icons/places/folder-pictures.svg
+videos,img/adwaita-icons/places/folder-videos.svg
