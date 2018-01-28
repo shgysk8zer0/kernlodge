@@ -16,7 +16,7 @@ body > nav > *:first-child {
 }
 
 body > nav > *:not(:last-child) {
-	border-right: 2px solid #381C08;
+	border-right: 4px solid #381C08;
 }
 
 body > nav > *:hover {

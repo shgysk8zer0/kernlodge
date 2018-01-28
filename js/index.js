@@ -80,5 +80,7 @@ ready().then(async () => {
 		}
 	});
 
+	$('[data-click="fullscreen"]').click(event => event.target.closest('.gallery').requestFullScreen());
+
 	supportsAsClasses(...document.documentElement.dataset.supportTest.split(',').map(test => test.trim()));
 });

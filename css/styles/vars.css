@@ -3,14 +3,14 @@
 	--tablet-rem: 1.5vw;
 	--mobile-rem: 3.3vw;
 	--font-display: optional;
-	
+
 	--nav-height: 3rem;
 
-	--header-background-1920: url("../img/header-bg-1920.jpg");
-	--header-background-1200: url("../img/header-bg-1200.jpg");
-	--header-background-800: url("../img/header-bg-800.jpg");
-	--header-background-400: url("../img/header-bg-400.jpg");
-	--nav-background: url("../img/board.jpg");
+	--header-background-1920: url("../../img/header-bg-1920.jpg");
+	--header-background-1200: url("../../img/header-bg-1200.jpg");
+	--header-background-800: url("../../img/header-bg-800.jpg");
+	--header-background-400: url("../../img/header-bg-400.jpg");
+	--nav-background: url("../../img/board.jpg");
 
 	--default-color: #010101;
 	--accent-color: #298F29;

@@ -1,5 +1,5 @@
-<div class="gallery card">
-	<figure>
+<div class="gallery card color-alt" id="gallery-{{ include.images | first }}">
+	<figure class="relative">
 		{% assign current = include.images | first %}
 		{% include imgur.html
 			imgur=current
@@ -7,13 +7,16 @@
 			class='current'
 		%}
 		<figcaption></figcaption>
+		<button type="button" class="no-border background-primary absolute bottom right" data-click="fullscreen">
+			{% include icon.html icon='#fullscreen' %}
+		</button>
 	</figure>
 	<div class="thumbnails">
 		{% for image in include.images %}
 			{% include imgur.html
 				imgur=image
 				sizes='(min-width: 1000px) 10vw, 30vw'
-				class='thumbnail card'
+				class='thumbnail'
 			%}
 		{% endfor %}
 	</div>
