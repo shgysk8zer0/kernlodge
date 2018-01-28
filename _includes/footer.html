@@ -2,10 +2,21 @@
 	<a href="{{ '/contact/' | absolute_url }}">Contact</a>
 	<hr />
 	<div class="social-icons">
-		<a href="#" class="">{% include icon.html icon='#facebook' class='icon' %}</a>
-		<a href="#">{% include icon.html icon='#twitter' class='icon' %}</a>
-		<a href="#">{% include icon.html icon='#youtube' class='icon' %}</a>
-		<a href="#">{% include icon.html icon='#yelp' class='icon' %}</a>
+		<a href="{{ site.facebook | default: '#' }}" title="Facebook">
+			{% include icon.html icon='#facebook' class='icon' %}
+		</a>
+		<a href="{{ site.twitter | default: '#' }}" title="Twitter">
+			{% include icon.html icon='#twitter' class='icon' %}
+		</a>
+		<a href="{{ site.youtube | default: '#' }}" title="YouTube">
+			{% include icon.html icon='#youtube' class='icon' %}
+		</a>
+		<a href="{{ site.yelp | default: '#' }}" title="Yelp">
+			{% include icon.html icon='#yelp' class='icon' %}
+		</a>
+		<a href="{{ site.feed.url | absolute_url }}" title="RSS Feed">
+			{% include icon.html icon='#rss' class='current-color icon' %}
+		</a>
 	</div>
 	<div>
 		&copy; {{ 'now' | date: '%Y' }}
