@@ -8,7 +8,7 @@ charset: utf-8
 paginate: 5
 paginate_path: "/page-:num/"
 viewport: width=device-width
-robots: 'follow,index'
+robots: 'nofollow,noindex'
 referrer: origin-when-cross-origin
 manifest: /manifest.json
 tiles-config: /broswerconfig.xml
