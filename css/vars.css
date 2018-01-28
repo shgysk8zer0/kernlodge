@@ -1,0 +1,37 @@
+:root {
+	--desktop-rem: 1.3vw;
+	--tablet-rem: 1.5vw;
+	--mobile-rem: 3.3vw;
+	--font-display: optional;
+	
+	--nav-height: 3rem;
+
+	--header-background-1920: url("/img/header-bg-1920.jpg");
+	--header-background-1200: url("/img/header-bg-1200.jpg");
+	--header-background-800: url("/img/header-bg-800.jpg");
+	--header-background-400: url("/img/header-bg-400.jpg");
+
+	--default-color: #010101;
+	--accent-color: #298F29;
+	--alt-color: #FAFAFA;
+	--primary-color: #E0E0E0;
+	--link-color: auto;
+	--button-background: var(--accent-color);
+	--button-active-background: var(--accent-color);
+	--button-active-color: var(--button-color);
+	--button-disabled-background: var(--button-active-background);
+	--button-border: 0.1rem outset var(--border-color);
+	--button-disabled-border: 0.1rem inset var(--border-color);
+	--button-active-border: var(--button-disabled-border);
+	--button-color: var(--accent-color);
+
+	--main-font: 'Roboto';
+	--title-font: 'Acme';
+	--header-font: 'Alice';
+	--article-font: 'Ubuntu';
+	--article-header-font: var(--header-font);
+
+	/*================== Animation properties ==================*/
+	--animation-stagger: 150ms;
+
+}

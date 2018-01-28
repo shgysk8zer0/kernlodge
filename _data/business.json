@@ -1,0 +1,73 @@
+{
+  "@context": "http://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "The Kern Lodge",
+  "url": "http://www.thekernlodge.com/",
+  "telephone": "+1-760-376-2223",
+  "email": "info@thekernlodge.com",
+  "priceRange": "$$",
+  "openingHours": "Su-Sa 08:00-22:00",
+  "checkinTime": "15:00-22:00",
+  "checkoutTime": "11:00",
+  "petsAllowed": "We have set aside two rooms (Apartments 203 & 204 ONLY) for dogs at a rate of $15 per dog, per night as part of a cleaning fee; However, there must be prior approval from Management. There is a fee of $100 per unauthorized pet, per night.",
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "value": "No smoking"
+    }, {
+      "@type": "LocationFeatureSpecification",
+      "value": "Mini-fridge"
+    }, {
+      "@type": "LocationFeatureSpecification",
+      "value": "Microwave"
+    }, {
+      "@type": "LocationFeatureSpecification",
+      "value": "Coffee server"
+    }, {
+      "@type": "LocationFeatureSpecification",
+      "value": "AC"
+    }, {
+      "@type": "LocationFeatureSpecification",
+      "value": "Heating"
+    }, {
+      "@type": "LocationFeatureSpecification",
+      "value": "Wi-Fi"
+    }, {
+      "@type": "LocationFeatureSpecification",
+      "value": "Park area"
+    }, {
+      "@type": "LocationFeatureSpecification",
+      "value": "Swimming pool"
+    }, {
+      "@type": "LocationFeatureSpecification",
+      "value": "Ice machine"
+    }, {
+      "@type": "LocationFeatureSpecification",
+      "value": "Pool table"
+    }
+  ],
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://t-ec.bstatic.com/images/hotel/max1024x768/804/80482224.jpg",
+    "width": 995,
+    "height": 768
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "67 Valley View Drive",
+    "addressRegion": "Kernville",
+    "addressLocality": "CA",
+    "postalCode": "93238",
+    "addressCountry": "United States"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "telephone": "+1-760-376-2223",
+    "email": "info@thekernlodge.com"
+  },
+  "sameAs": [
+    "http://www.twitter./thekernlodge",
+    "https://www.facebook.com/thekernlodge"
+  ]
+}
