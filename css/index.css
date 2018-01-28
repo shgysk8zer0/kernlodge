@@ -28,7 +28,7 @@
 	animation-play-state: inherit;
 }
 
-:root:loading {
+:root:.loading {
 	animation-play-state: paused;
 }
 
