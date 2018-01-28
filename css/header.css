@@ -5,8 +5,8 @@ header {
 body > header {
 	grid-area: header;
 	text-shadow: 0.4em 0.4em 0.4em black;
-	min-height: 30vh;
-	background-position: top left;
+	min-height: 40vh;
+	background-position: bottom left;
 }
 
 body.layout-home > header {
