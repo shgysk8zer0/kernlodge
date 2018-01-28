@@ -1,16 +1,16 @@
 <header class="background-fixed background-cover background-no-repeat color-alt font-title">
 	<div class="contact-bar clearfix absolute top width-viewport">
-		<a href="tel:{{ site.data.business.telephone }}" class="float-left contact-link">
+		<a href="tel:{{ site.data.business.telephone }}" class="float-left contact-link" role="button">
 			{% include icon.html icon='#call-start' %}
 			{{ site.data.business.telephone | replace: '+', '' }}
 		</a>
-		<a href="mailto:{{ site.data.business.email }}" class="float-right contact-link">
+		<a href="mailto:{{ site.data.business.email }}" class="float-right contact-link" role="button">
 			{% include icon.html icon='#mail-unread' %}
 			{{ site.data.business.email }}
 		</a>
 	</div>
 	<h3 class="center branding animation-slow animation-ease-in bounceIn animation-fill-backwards">
-		<a href="{{ site.data.business.url }}" class="business-name underline">{{ site.data.business.name }}</>
+		<a href="{{ site.data.business.url }}" class="business-name underline>{{ site.data.business.name }}">
 		{% include icon.html
 			icon='#logo'
 			class='current-color logo icon'

@@ -14,7 +14,10 @@ body > header {
 }
 
 .contact-link {
-	margin: 1em;
+	margin: 0.7em;
+	padding: 0.3em;
+	border-radius: 6px;
+}
 }
 
 body.layout-home > header {

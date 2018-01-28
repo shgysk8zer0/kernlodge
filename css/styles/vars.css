@@ -2,7 +2,7 @@
 	--desktop-rem: 1.3vw;
 	--tablet-rem: 1.5vw;
 	--mobile-rem: 3.3vw;
-	--font-display: optional;
+	--font-display: auto;
 
 	--nav-height: 3rem;
 
@@ -21,8 +21,8 @@
 	--button-active-background: #4B6B4A;
 	--button-active-color: var(--button-color);
 	--button-disabled-background: var(--button-active-background);
-	--button-border: none;
-	--button-disabled-border: none;
+	--button-border: 1px solid var(--button-disabled-background);
+	--button-disabled-border: 1px solid var(--button-background);
 	--button-active-border: var(--button-disabled-border);
 	--button-color: var(--alt-color);
 
