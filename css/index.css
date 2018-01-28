@@ -24,6 +24,18 @@
 	overflow-x: hidden;
 }
 
+* {
+	animation-play-state: inherit;
+}
+
+:root:loading {
+	animation-play-state: paused;
+}
+
+.branding {
+	font-size: 1.8em;
+}
+
 .thumbnails {
 	display: flex;
 	flex-direction: row;

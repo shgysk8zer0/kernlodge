@@ -12,7 +12,7 @@ robots: 'nofollow,noindex'
 referrer: origin-when-cross-origin
 manifest: /manifest.json
 tiles-config: /broswerconfig.xml
-# service_worker: /service-worker.js
+service_worker: /service-worker.js
 og-type: website
 description: "A blog for the Kern Lodge"
 mobile-web-app-capable: true
@@ -38,7 +38,7 @@ feed:
   url: /feed.rss
   type: application/rss+xml
 icons: '/img/icons.svg'
-theme-color: '#009688'
+theme-color: '#298F29'
 background-color: '#242424'
 # discus-identifier: chris-zuber
 # google-analytics: UA-112855471-1
@@ -77,7 +77,7 @@ preload:
     as: image
     type: image/svg+xml
     name: icons
-  - href: /img/logos/Facebook.svg
+  - href: /img/logos/facebook.svg
     as: image
     type: image/svg+xml
     name: Facebook
@@ -85,11 +85,11 @@ preload:
     as: image
     type: image/svg+xml
     name: Twitter
-  - href: /img/logos/Google_plus.svg
+  - href: /img/logos/google-plus.svg
     as: image
     type: image/svg+xml
     name: Google+
-  - href: /img/logos/Reddit.svg
+  - href: /img/logos/reddit.svg
     as: image
     type: image/svg+xml
     name: Reddit

@@ -58,7 +58,8 @@
     "addressRegion": "Kernville",
     "addressLocality": "CA",
     "postalCode": "93238",
-    "addressCountry": "United States"
+    "addressCountry": "United States",
+    "url": "https://www.google.com/maps/dir/''/kern+lodge/data=!4m5!4m4!1m0!1m2!1m1!1s0x80c1ccc7ca5a79ef:0x5f2b4724f5c5c82f?sa=X&ved=0ahUKEwiLyJ7dg_vYAhUW52MKHe69CgoQ9RcImwEwDA"
   },
   "contactPoint": {
     "@type": "ContactPoint",

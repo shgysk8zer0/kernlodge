@@ -1,6 +1,6 @@
 import './std-js/deprefixer.js';
 import './std-js/shims.js';
-import {$, ready, registerServiceWorker} from './std-js/functions.js';
+import {$, ready, loaded, registerServiceWorker} from './std-js/functions.js';
 import * as Mutations from './std-js/mutations.js';
 import {supportsAsClasses} from './std-js/supports.js';
 import webShareApi from './std-js/webShareApi.js';
@@ -37,6 +37,8 @@ function hashChangeHandler(event) {
 }
 
 webShareApi(facebook, twitter, googlePlus, linkedIn, reddit, gmail, email);
+
+loaded.then(() => document.documentElement.classList.replace('loading', 'loaded'));
 
 ready().then(async () => {
 	window.addEventListener('hashchange', hashChangeHandler);

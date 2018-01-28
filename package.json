@@ -11,7 +11,7 @@
     "lint:js": "eslint .",
     "lint:css": "stylelint css/",
     "test": "npm run lint",
-    "publish": "JEKYLL_ENV=production bundle exec jekyll build -d /keybase/public/shgysk8zer0/kernlodge/ -b 'https://shgysk8zer0.keybase.pub/kernlodge'",
+    "publish": "npm run build && JEKYLL_ENV=production bundle exec jekyll build -d /keybase/public/shgysk8zer0/kernlodge/ -b /kernlodge/",
     "build": "npm run build:icons && npm run build:css && npm run build:js",
     "build:css": "postcss -c postcss.config.json css/index.css -o css/index.min.css",
     "build:js": "webpack",
