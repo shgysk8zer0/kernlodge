@@ -1,6 +1,6 @@
 <header class="background-fixed background-cover background-no-repeat color-alt font-title">
 	<div class="contact-bar clearfix absolute top width-viewport">
-		<a href="mailto:{{ site.data.business.telephone }}" class="float-left">
+		<a href="tel:{{ site.data.business.telephone }}" class="float-left">
 			{% include icon.html icon='#call-start' %}
 			{{ site.data.business.telephone | replace: '+', '' }}
 		</a>
