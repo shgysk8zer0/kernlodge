@@ -1,6 +1,6 @@
 import './std-js/deprefixer.js';
 import './std-js/shims.js';
-import {$, wait, ready, registerServiceWorker} from './std-js/functions.js';
+import {$, ready, registerServiceWorker} from './std-js/functions.js';
 import * as Mutations from './std-js/mutations.js';
 import {supportsAsClasses} from './std-js/supports.js';
 import webShareApi from './std-js/webShareApi.js';
@@ -78,29 +78,4 @@ ready().then(async () => {
 	});
 
 	supportsAsClasses(...document.documentElement.dataset.supportTest.split(',').map(test => test.trim()));
-
-	if (document.head.dataset.hasOwnProperty('jekyllData')) {
-		console.log(JSON.parse(decodeURIComponent(document.head.dataset.jekyllData)));
-	}
-
-	$('header .animation-paused, body > .animation-paused').each(async (el, n) => {
-		await wait(n * 200);
-		el.classList.remove('animation-paused');
-	});
-
-	if ('IntersectionObserver' in window) {
-		$('main .animation-paused').intersect((entries, observer) => {
-			entries.filter(entry => entry.isIntersecting).forEach(async (entry, n) => {
-				observer.unobserve(entry.target);
-				await wait(n * 200);
-				entry.target.classList.remove('animation-paused');
-
-			});
-		}, {rootMargin: '50%'});
-	} else {
-		await $('main .animation-paused').each(async (el, n) => {
-			await wait(n * 200);
-			el.classList.remove('animation-paused');
-		});
-	}
 });
