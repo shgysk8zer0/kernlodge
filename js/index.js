@@ -38,7 +38,7 @@ function hashChangeHandler(event) {
 
 webShareApi(facebook, twitter, googlePlus, linkedIn, reddit, gmail, email);
 
-loaded.then(() => document.documentElement.classList.replace('loading', 'loaded'));
+loaded().then(() => document.documentElement.classList.replace('loading', 'loaded'));
 
 ready().then(async () => {
 	window.addEventListener('hashchange', hashChangeHandler);
