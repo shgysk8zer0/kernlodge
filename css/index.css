@@ -20,6 +20,10 @@
 @import url("./dialog.css");
 @import url("./article.css");
 
+:root {
+	overflow-x: hidden;
+}
+
 hr {
 	max-width: calc(100vw - 100px);
 	width: 100%;
