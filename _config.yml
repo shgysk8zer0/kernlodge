@@ -139,8 +139,6 @@ defaults:
       comments: false
       ads: false
 plugins:
-  - jekyll-gist
-  - jekyll-admin
   - jekyll-watch
   # - jekyll-avatar
   # - jekyll-mentions

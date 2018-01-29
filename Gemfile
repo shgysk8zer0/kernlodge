@@ -28,9 +28,6 @@ gem "jekyll-paginate", "~> 1.1"
 #     gem "jekyll-paginate", "~> 1.1"
 # end
 
-# Added at 2018-01-18 18:00:06 -0800 by shgysk8zer0:
-gem "jekyll-admin", "~> 0.7.0"
-
 # Added at 2018-01-18 18:44:06 -0800 by shgysk8zer0:
 # gem "jekyll-octicons", "~> 4.2"
 
