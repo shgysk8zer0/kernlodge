@@ -34,8 +34,6 @@ GEM
       sass (~> 3.4)
     jekyll-watch (1.5.1)
       listen (~> 3.0)
-    jekyll-youtube (1.0.0)
-      jekyll
     kramdown (1.16.2)
     liquid (4.0.0)
     listen (3.1.5)
@@ -92,10 +90,9 @@ DEPENDENCIES
   jekyll-gist (~> 1.4, >= 1.4.1)
   jekyll-paginate (~> 1.1)
   jekyll-watch (~> 1.5)
-  jekyll-youtube (~> 1.0)
 
 RUBY VERSION
-   ruby 2.4.3p205
+   ruby 2.3.3p222
 
 BUNDLED WITH
    1.16.1

@@ -140,7 +140,6 @@ defaults:
       ads: false
 plugins:
   - jekyll-gist
-  - jekyll-youtube
   - jekyll-admin
   - jekyll-watch
   # - jekyll-avatar

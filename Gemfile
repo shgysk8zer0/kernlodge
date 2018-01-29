@@ -12,7 +12,7 @@ ruby RUBY_VERSION
 gem "jekyll", "3.6.2"
 # gem "jekyll-github-metadata", "~> 1.0"
 gem 'jekyll-gist', '~> 1.4', '>= 1.4.1'
-gem 'jekyll-youtube', '~> 1.0'
+# gem 'jekyll-youtube', '~> 1.0'
 gem "jekyll-paginate", "~> 1.1"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
