@@ -7,7 +7,7 @@ body > header {
 	font-size: 1.3rem;
 	text-shadow: var(--shadow);
 	min-height: 40vh;
-	background-position: bottom left;
+	background-position: bottom center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
