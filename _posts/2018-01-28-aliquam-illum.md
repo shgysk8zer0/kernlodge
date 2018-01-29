@@ -1,6 +1,6 @@
 ---
 title: Aliquam illum
-imgur: 'https://i.imgur.com/SJU5a6Rl.png'
+imgur: 'https://i.imgur.com/SJU5a6R.png'
 description:  In fugiat tenetur inventore blanditiis est eveniet vitae aut.
 ---
 {% include imgur.html url='SJU5a6R' sizes='(max-width: 700px) 100vw, 30vw' class='float-right card shadow' %}
