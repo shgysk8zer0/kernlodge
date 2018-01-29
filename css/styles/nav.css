@@ -1,6 +1,6 @@
 body > nav {
 	font-size: 1.5rem;
-	background-image: var(--nav-background);
+	background: var(--board-background);
 	background-repeat: repeat-x;
 	grid-area: nav;
 	height: var(--nav-height);
