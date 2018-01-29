@@ -1,7 +1,7 @@
 <a href="{{ include.post.url | absolute_url }}" title="{{ include.post.title }}">
 	{% if include.post.imgur %}
 		{% include imgur.html
-			imgur=include.post.imgur
+			url=include.post.imgur
 			sizes='(min-width: 700px) 23vw, 100vw'
 			alt='Article thumbnail'
 			class='post-img'

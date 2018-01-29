@@ -1,11 +1,11 @@
 ---
 title: Lorem Ipsum
-imgur: SJU5a6R
+imgur: 'https://imgur.com/SJU5a6R'
 description:  In fugiat tenetur inventore blanditiis est eveniet vitae aut.
 pinned: true
 ---
 
-{% include imgur.html imgur='SJU5a6R' sizes='(max-width: 700px) 100vw, 30vw' class='float-right card shadow' %}
+{% include imgur.html url='SJU5a6R' sizes='(max-width: 700px) 100vw, 30vw' class='float-right card shadow' %}
 
 Aliquam illum id ex voluptatibus voluptatum. Mollitia quo voluptatem optio est. Non saepe voluptatem quidem.
 
@@ -19,7 +19,7 @@ Molestias voluptate accusantium nesciunt eveniet sit natus. Beatae quia modi dol
 
 Veniam saepe aut aliquam. Occaecati iusto maiores voluptatum iste necessitatibus rerum. Temporibus quo quia voluptas ad dolores autem aspernatur alias. Ea hic est mollitia impedit.
 
-{% include imgur.html imgur='R5HHZf8' sizes='(max-width: 700px) 100vw, 30vw' class='float-left card shadow' %}
+{% include imgur.html url='R5HHZf8' sizes='(max-width: 700px) 100vw, 30vw' class='float-left card shadow' %}
 
 Repellat at alias asperiores dolores omnis pariatur. Ipsam hic fuga esse voluptas voluptas dignissimos voluptatibus. Nobis unde iusto dolores officiis. Eligendi assumenda autem at maxime provident.
 
