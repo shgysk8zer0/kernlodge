@@ -77,6 +77,9 @@ preload:
     as: image
     type: image/svg+xml
     name: icons
+  - href: /img/board.jpg
+    as: image
+    name: plank
   - href: /img/logos/facebook.svg
     as: image
     type: image/svg+xml
