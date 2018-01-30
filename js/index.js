@@ -85,9 +85,7 @@ ready().then(async () => {
 		event.preventDefault();
 		const body = new FormData(event.target);
 		const url = new URL(event.target.action, document.baseURI);
-		if (event.target.hasAttribute('netlify-honeypot')) {
-			body.delete(event.target.getAttribute('netlify-honeypot'));
-		}
+		body.delete('filter');
 		fetch(url, {body, method: 'POST'});
 		event.target.closest('dialog').close();
 	});
