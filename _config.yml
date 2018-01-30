@@ -151,6 +151,8 @@ plugins:
   # - jekyll-seo-tag
   # - jemoji
   # - jekyll-octicons
+include:
+- _headers
 exclude:
 - "/package.json"
 - "/package-lock.json"
