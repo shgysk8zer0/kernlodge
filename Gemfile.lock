@@ -49,8 +49,5 @@ DEPENDENCIES
   jekyll-paginate (~> 1.1)
   jekyll-watch (~> 1.5)
 
-RUBY VERSION
-   ruby 2.4.3p205
-
 BUNDLED WITH
    1.16.1
