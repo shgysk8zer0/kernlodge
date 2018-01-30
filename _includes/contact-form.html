@@ -2,7 +2,7 @@
 	<header class="clearfix sticky top background-primary shadow">
 		<button type="button" class="float-right" data-close="#contact-form-dialog">{% include icon.html icon='#close' %}</button>
 	</header>
-	<form name="contact" data-netlify="true" netlify-honeypot="filter">
+	<form name="contact" data-netlify="true"> 
 		<fieldset>
 			<div>
 				<label for="contact-name">{% include icon.html icon='#avatar-default' %}</label>
@@ -17,7 +17,6 @@
 			<input type="email" name="email" id="contact-email" placeholder="user@example.com" autocomplete="email" required="" />
 			<br />
 			<textarea name="message" placeholder="Enter your message" required=""></textarea>
-			<input type="text" name="filter" value="dzhkbfg" required="" hidden="" />
 		</fieldset>
 		<hr />
 		<button type="submit" title="Send" class="color-alt">{% include icon.html icon='#mail-send' %}</button>
