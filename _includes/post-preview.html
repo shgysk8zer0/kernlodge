@@ -5,6 +5,7 @@
 			sizes='(min-width: 700px) 23vw, 100vw'
 			alt='Article thumbnail'
 			class='post-img'
+			decoding='async'
 		%}
 	{% elsif include.post.image != null %}
 		<img src="{{ include.post.image | absolute_url }}" class="post-img"{% if post.srcset %} srcset="{{ post.srcset | join: ', ' }}" sizes="(min-width: 700px) 23vw, 100vw"{% endif %} alt="Article thumbnail" crossorigin="anonymous" />
