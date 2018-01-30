@@ -80,17 +80,7 @@ ready().then(async () => {
 		}
 	});
 
-	// $('[data-click="fullscreen"]').click(event => event.target.closest('.gallery').requestFullScreen());
-	$(document.forms).submit(event => {
-		event.preventDefault();
-		const body = new FormData(event.target);
-		const url = new URL(event.target.action, document.baseURI);
-		if (event.target.hasAttribute('netlify-honeypot')) {
-			body.delete(event.target.getAttribute('netlify-honeypot'));
-		}
-		fetch(url, {body, method: 'POST'});
-		event.target.closest('dialog').close();
-	});
+	$('[data-click="fullscreen"]').click(event => event.target.closest('.gallery').requestFullScreen());
 
 	supportsAsClasses(...document.documentElement.dataset.supportTest.split(',').map(test => test.trim()));
 });
