@@ -10,12 +10,14 @@
 	--river-background-1200: url("../../img/river-bank-1200.jpg");
 	--river-background-800: url("../../img/river-bank-800.jpg");
 	--river-background-400: url("../../img/river-bank-400.jpg");
+	
+	--hills-color: #8B8168;
 
-	--hills-background-1920: url("../../img/green-hills-1920.jpg");
-	--hills-background-1200: url("../../img/green-hills-1200.jpg");
-	--hills-background-800: url("../../img/green-hills-800.jpg");
-	--hills-background-400: url("../../img/green-hills-400.jpg");
-	--board-background: url("../../img/board.jpg");
+	--hills-background-1920: url("../../img/green-hills-1920.jpg") var(--hills-color);
+	--hills-background-1200: url("../../img/green-hills-1200.jpg") var(--hills-color);
+	--hills-background-800: url("../../img/green-hills-800.jpg") var(--hills-color);
+	--hills-background-400: url("../../img/green-hills-400.jpg") var(--hills-color);
+	--board-background: url("../../img/board.jpg") #441F16;
 
 	--primary-color: #E1F8D3;
 	--accent-color: #64B397;

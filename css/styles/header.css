@@ -37,42 +37,42 @@ body > header > [itemtype="http://schema.org/Person"] {
 }
 
 .background-river {
-	background-image: var(--river-background-1920);
+	background: var(--river-background-1920);
 }
 
 .background-hills {
-	background-image: var(--hills-background-1920);
+	background: var(--hills-background-1920);
 }
 
 @media (orientation: portrait) and (min-height: 601px) and (max-height: 900px),
 	(orientation: landscape) and (min-width: 801px) and (max-width: 1200px) {
 	.background-river {
-		background-image: var(--river-background-1200);
+		background: var(--river-background-1200);
 	}
 
 	.background-hills {
-		background-image: var(--hills-background-1200);
+		background: var(--hills-background-1200);
 	}
 }
 
 @media (orientation: portrait) and (min-height: 316px) and (max-height: 600px),
 	(orientation: landscape) and (min-width: 421px) and (max-width: 800px) {
 	.background-river {
-		background-image: var(--river-background-800);
+		background: var(--river-background-800);
 	}
 
 	.background-hills {
-		background-image: var(--hills-background-800);
+		background: var(--hills-background-800);
 	}
 }
 
 @media (orientation: portrait) and (max-height: 315px),
 	(orientation: landscape) and (max-width: 420px) {
 	.background-river {
-		background-image: var(--river-background-400);
+		background: var(--river-background-400);
 	}
 
 	.background-hills {
-		background-image: var(--hills-background-400);
+		background: var(--hills-background-400);
 	}
 }
