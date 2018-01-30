@@ -2,8 +2,6 @@
 Link: </css/styles/index.min.css>; rel=preload; as=stylesheet
 Link: </css/js/index.min.js>; rel=preload; as=script
 Link: </css/img/icons.svg>; rel=preload; as=image
-
-/*.html
 X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 Strict-Transport-Security: max-age=31536000
