@@ -9,7 +9,7 @@ dialog {
 	box-shadow: 0 6px 60px rgba(0,0,0,.8);
 	padding: 0;
 	max-width: 85vw;
-	max-height: 55vh;
+	max-height: 70vh;
 }
 
 dialog[open] + .backdrop, dialog::backdrop {

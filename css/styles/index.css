@@ -24,6 +24,18 @@
 	overflow-x: hidden;
 }
 
+#contact-form-dialog {
+	color: #323232;
+	font-size: 1.15rem;
+}
+
+input {
+	border: none;
+	border-bottom: 2px solid currentColor;
+	padding: 0.3em 0.2em 0.1em 0.2em;
+	margin-bottom: 0.3em;
+}
+
 dialog[open] {
 	animation: fadeIn 600ms ease-in;
 }
