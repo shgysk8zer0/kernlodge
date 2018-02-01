@@ -10,13 +10,12 @@
 	/* --river-background-1200: url("../../img/river-bank-1200.jpg"); */
 	/* --river-background-800: url("../../img/river-bank-800.jpg"); */
 	/* --river-background-400: url("../../img/river-bank-400.jpg"); */
-	
-	--hills-color: #8B8168;
 
-	--header-background-desktop: url("../../img/green-hills-1920.jpg") var(--hills-color);
-	--header-background-laptop: url("../../img/green-hills-1280.jpg") var(--hills-color);
-	--header-background-tablet: url("../../img/green-hills-800.jpg") var(--hills-color);
-	--header-background-mobile: url("../../img/green-hills-400.jpg") var(--hills-color);
+	--header-background-desktop: url("../../img/green-hills-1920.jpg");
+	--header-background-laptop: url("../../img/green-hills-1280.jpg");
+	--header-background-tablet: url("../../img/green-hills-800.jpg");
+	--header-background-mobile: url("../../img/green-hills-400.jpg");
+	--header-background-color: #8B8168;
 	--board-background: url("../../img/board.jpg") #441F16;
 
 	--primary-color: #E1F8D3;
