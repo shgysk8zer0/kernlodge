@@ -16,6 +16,7 @@ A blogging site for The Kern Lodge
 - [Adding videos](#adding-videos)
 - [Author profile](#cauthor-profile)
 - [Publishing](#publishing)
+- [Configuring](#configuring)
 - [Recommended software and services](#recommended-software-and-services)
 - [Developer guidelines](docs/CONTRIBUTING.md)
 
@@ -54,10 +55,14 @@ You can change the layout and meta data in the post's "front matter".
 ---
 title: My Awesome Post
 author: Chuck Norris
-data: '2018-02-01 23:57'
+layout: post
+date: '2018-02-01 23:57'
+updated: '2018-02-02 01:20'
+category: tutorials
+pinned: true
 description: 'This is a description, and it should be surrounded in single quotes'
 imgur: 'https://imgur.com/GxWyD8e'
-keywords:
+tags:
 - Blog
 - Post
 - Kittens
@@ -65,20 +70,56 @@ keywords:
 ---
 ```
 
+You **MUST** set `title`, `author`, and `date`.
+
+You **SHOULD** set `description`, `tags`, and either `imgur` or `image`.
+
+If you update a post, you **SHOULD** add `updated` with the current date and time.
+
+You **MAY** also specify a different `layout` or add a `category`. Setting `pinned`
+will include this post in pinned posts.
+
 As a general rule, anything in front matter that contains special characters
 **MUST** be surrounded by double or single quotes.
 
 ## Working with images
 You can either use typical Markdown syntax, or use use an Imgur Responsive Image
-```
-{% include imgur.html
-  ulr='https://imgur.com/GxWyD8e'
-%}
-```
+`{% include imgur.html ulr='https://imgur.com/GxWyD8e'%}`
+
+Just upload your image to Imgur and copy and paste the URL they provide you.
 
 Using Imgur will automatically select the correct image for the device's screen
 (assuming the image should fill up 100% of the width of the screen) and you can
 optionally specify different dimensions by adding a [`sizes` attribute.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes)
+
+You can also only include the gibberish portion of the URL *("GxWyD8e" in example).*
+
+To create galleries, you will need to add data to the front matter and include
+the gallery component:
+```
+---
+title: Gallery Demo
+description: A sample image gallery
+pinned: true
+category: galleries
+tags:
+- gallery
+- images
+- pexels
+imgur: in8sF0m
+gallery:
+- 'https://imgur.com/in8sF0m'
+- 'https://imgur.com/lBNNoxM'
+- 'https://imgur.com/SJU5a6R'
+- 'https://imgur.com/R5HHZf8'
+- 'https://imgur.com/uGVGU3i'
+- 'https://imgur.com/GxWyD8e'
+- 'https://imgur.com/n1lOjUJ'
+---
+This is a sample post for photo galleries
+
+{% include gallery.html images=page.gallery %}
+```
 
 ## Adding videos
 You may either copy the embed code provided by YouTube *(Share -> Embed) or use
@@ -113,6 +154,16 @@ remove these resouces from `.gitignore` and re-generate and commit them.
 Since Jekyll sites are only static assets, you can publish anywhere you have filesystem
 access. This might require FTP, rsync, it it will require for you to be able to
 build the site locally before uploading the **entire** contents of `_site/`.
+
+## Configuring
+`_config.yml` will allow you to setup various site connections and servies including:
+- Disqus *(For comments)*
+- Google Analytics
+- Google Webmaster Tools
+- Bing Webmaster Tools
+- Facebook
+- Twitter
+- Google+
 
 ## Recommended software and services
 You will, at the very least, be required to open and edit Markdown files and push
