@@ -19,7 +19,7 @@ article header a:hover {
 }
 
 [itemprop~="articleBody"] {
-	margin: .7em;
+	margin: .7em 2em;
 }
 
 [itemprop~="articleBody"] img.float-left, [itemprop~="articleBody"] picture.float-left {

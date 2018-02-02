@@ -83,7 +83,8 @@
 		</details>
 	</header>
 	{% if page.subheading %}{% include subheading.html subheading=page.subheading %}{% endif %}
-	<div itemprop="articleBody mainEntityOfPage" class="optimize-legibility">{{ content }}</div>
+	<div itemprop="articleBody mainEntityOfPage" class="optimize-legibility" class="clearfix">{{ content }}</div>
+	<hr />
 	<footer class="clearfix relative">
 		{% if page.ads %}{% include ad.html %}{% endif %}
 		{% if page.comments %}{% include disqus.html %}{% endif %}
