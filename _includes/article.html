@@ -86,8 +86,8 @@
 	<div itemprop="articleBody mainEntityOfPage" class="optimize-legibility" class="clearfix">{{ content }}</div>
 	<hr />
 	<footer class="clearfix relative">
-		{% if page.ads %}{% include ad.html %}{% endif %}
-		{% if page.comments %}{% include disqus.html %}{% endif %}
+		{% if page.ads and site.google-analytics %}{% include ad.html %}{% endif %}
+		{% if page.comments and site.disqus-identifier %}{% include disqus.html %}{% endif %}
 		<hr />
 		{% include license.html %}
 	</footer>
