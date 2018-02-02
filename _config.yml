@@ -40,7 +40,7 @@ feed:
 icons: '/img/icons.svg'
 theme-color: '#298F29'
 background-color: '#242424'
-# discus-identifier:
+# disqus-identifier:
 # google-analytics:
 # ad-sense:
 # webmaster-verifications:
