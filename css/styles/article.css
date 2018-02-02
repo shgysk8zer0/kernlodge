@@ -47,8 +47,13 @@ article header a:hover {
 }
 
 .meta-author-links a {
-	margin-left: 0.3em;
+	margin-left: 0.15em;
 	height: 1.3em;
+}
+
+.meta-author-links img {
+	height: 1.3em;
+	max-width: 1.3em;
 }
 
 .meta-author-links svg {
