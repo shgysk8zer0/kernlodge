@@ -31,9 +31,14 @@ repository:
   username: shgysk8zer0
   title: shgysk8zer0.github.io
   url: 'https://github.com/shgysk8zer0/shgysk8zer0.github.io'
-facebook: 'thekernlodge'
-twitter: 'thekernlodge'
-yelp: 'kern-lodge-kernville'
+facebook: 'https://www.facebook.com/thekernlodge'
+twitter: 'https://www.twitter./thekernlodge'
+yelp: 'https://www.yelp.com/biz/kern-lodge-kernville'
+tripadvisor: 'https://www.tripadvisor.com/Hotel_Review-g32556-d632862-Reviews-The_Kern_Lodge-Kernville_California.html'
+youtube: '#'
+instagram: '#'
+linkedin: '#'
+google_plus: '#'
 feed:
   url: /feed.rss
   type: application/rss+xml
