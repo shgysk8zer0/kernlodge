@@ -1,6 +1,6 @@
 import './std-js/deprefixer.js';
 import './std-js/shims.js';
-import {$, ready, loaded, registerServiceWorker} from './std-js/functions.js';
+import {$, ready, loaded, registerServiceWorker, imgur} from './std-js/functions.js';
 import * as Mutations from './std-js/mutations.js';
 import {supportsAsClasses} from './std-js/supports.js';
 import webShareApi from './std-js/webShareApi.js';
@@ -78,6 +78,39 @@ ready().then(async () => {
 				location.hash = '';
 			}
 		}
+	});
+
+	$('article [data-imgur]:not(.thumbnail)').click(async event => {
+		if (event.target.matches('.thumbnail, .thumbnail *')) {
+			return;
+		}
+		const picture = await imgur(event.target.closest('[data-imgur]').dataset.imgur, {
+			sizes: ['95vw'],
+		});
+		const dialog = document.createElement('dialog');
+		const header = document.createElement('header');
+		const button = document.createElement('button');
+
+		button.type = 'button';
+		button.textContent = 'X';
+
+		dialog.classList.add('height-viewport', 'width-viewport');
+		$(dialog).css({
+			'max-width': 'unset',
+			'max-height': 'unset',
+		});
+		button.classList.add('float-right');
+		picture.lastElementChild.classList.add('card', 'center');
+		header.classList.add('sticky', 'top', 'shadow', 'background-primary', 'clearfix');
+
+		button.addEventListener('click', () => dialog.close());
+		dialog.addEventListener('close', () => dialog.remove());
+
+		header.append(button);
+		dialog.append(header);
+		dialog.append(picture);
+		document.body.append(dialog);
+		dialog.showModal();
 	});
 
 	// $('[data-click="fullscreen"]').click(event => event.target.closest('.gallery').requestFullScreen());
