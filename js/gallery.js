@@ -61,7 +61,7 @@ ready().then(async () => {
 		/*eslint no-constant-condition: "off" */
 		while(true) {
 			await wait(6000);
-			if (! document.hasOwnProperty('visibilityState') || document.visibilityState === 'visible') {
+			if (document.visibilityState !== 'hidden') {
 				thumb = thumbs.next().value;
 				await setGalleryImage(thumb, gallery);
 			}
