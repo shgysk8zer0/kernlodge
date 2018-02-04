@@ -61,8 +61,10 @@ ready().then(async () => {
 		/*eslint no-constant-condition: "off" */
 		while(true) {
 			await wait(6000);
-			thumb = thumbs.next().value;
-			await setGalleryImage(thumb, gallery);
+			if (! document.hasOwnProperty('visibilityState') || document.visibilityState === 'viisible') {
+				thumb = thumbs.next().value;
+				await setGalleryImage(thumb, gallery);
+			}
 		}
 	});
 });
