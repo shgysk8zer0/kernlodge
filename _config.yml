@@ -1,5 +1,6 @@
 author: Chris Zuber
 title: Kern Lodge Blog
+url: 'https://kernlodge.netlify.com'
 markdown: kramdown
 version: 0.1.0
 lang: en
@@ -32,7 +33,7 @@ repository:
   title: shgysk8zer0.github.io
   url: 'https://github.com/shgysk8zer0/shgysk8zer0.github.io'
 facebook: 'https://www.facebook.com/thekernlodge'
-twitter: 'https://www.twitter./thekernlodge'
+twitter: 'https://www.twitter.com/thekernlodge'
 yelp: 'https://www.yelp.com/biz/kern-lodge-kernville'
 tripadvisor: 'https://www.tripadvisor.com/Hotel_Review-g32556-d632862-Reviews-The_Kern_Lodge-Kernville_California.html'
 youtube: '#'
