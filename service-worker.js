@@ -46,7 +46,6 @@ const config = {
 		'/img/',
 		'/fonts/',
 		'/posts/',
-		'/resume/',
 		'/contact/',
 	],
 };
