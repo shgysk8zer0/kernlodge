@@ -48,6 +48,11 @@ const config = {
 		'/posts/',
 		'/contact/',
 	],
+	hosts: [
+		'secure.gravatar.com',
+		'i.imgur.com',
+		'cdn.polyfill.io',
+	],
 };
 
 addEventListener('install', async () => {
@@ -68,12 +73,12 @@ addEventListener('fetch', async event => {
 		try {
 			const url = new URL(req.url);
 			const isGet = req.method === 'GET';
-			const sameOrigin = url.origin === location.origin;
+			const allowedHost = config.hosts.includes(url.host);
 			const isHome = ['/', '/index.html', '/index.php'].some(path => url.pathname === path);
 			const notIgnored = config.ignored.every(path => url.pathname !== path);
 			const allowedPath = config.paths.some(path => url.pathname.startsWith(path));
 
-			return isGet && sameOrigin && (isHome || (allowedPath && notIgnored));
+			return isGet && (allowedHost || (isHome || (allowedPath && notIgnored)));
 		} catch(err) {
 			console.error(err);
 			return false;
@@ -105,6 +110,7 @@ addEventListener('fetch', async event => {
 	}
 
 	if (isValid(event.request)) {
+		// console.log(event.request.url);
 		event.respondWith(get(event.request));
 	}
 });
