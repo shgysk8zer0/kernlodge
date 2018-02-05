@@ -86,7 +86,7 @@ addEventListener('fetch', async event => {
 
 		if (navigator.onLine) {
 			const fetched = fetch(request).then(async resp => {
-				if (resp instanceof Response && resp.status < 400) {
+				if (resp instanceof Response && resp.ok) {
 					const respClone = await resp.clone();
 					await cache.put(event.request, respClone);
 				}
