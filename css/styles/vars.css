@@ -33,6 +33,7 @@
 	--button-disabled-border: 1px solid var(--button-background);
 	--button-active-border: var(--button-disabled-border);
 	--button-color: var(--alt-color);
+	--button-border-radius: 4px;
 
 	--shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.7);
 
