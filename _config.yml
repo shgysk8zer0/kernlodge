@@ -1,6 +1,7 @@
 author: Chris Zuber
 title: Kern Lodge Blog
 url: 'https://kernlodge.netlify.com'
+timezone: America/Los_Angeles
 markdown: kramdown
 version: 0.1.0
 lang: en
